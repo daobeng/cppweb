@@ -16,3 +16,4 @@ RUN apt-get -qq install build-essential libtcmalloc-minimal4 && \
 # Open port with mapping
 # -e exports PORT as an environment variable
 # sudo docker run -v <host>:<container> -p <host port>:<container port> -e PORT=8081 <image> <app to run>
+# sudo docker run -v /home/daniel/Desktop/Learning/cpp_serve:/usr/src/cpp_serve -p 8080:8080 -e PORT=8080 cpp_serve:latest /usr/src/cpp_serve/hello_crow/build/hello_crow

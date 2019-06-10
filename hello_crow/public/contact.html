@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <style>
+        img {
+            border-radius: 100%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="content">
+            {{#contact}}
+            <h1 class="title">{{firstName}}</h1>
+            <img src="{{photo}}" />
+            <p>Name: {{firstName}} {{lastName}}</p>
+            <p>Email: {{email}}</p>
+            <p>Phone: {{phone}}</p>
+            {{/contact}}
+        </div>
+    </section>
+</body>
+</html>
